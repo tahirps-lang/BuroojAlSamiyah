@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Holiday Home Management | Dubai Downtown Luxury Rentals</title>
+    <meta name="description" content="Maximize your Dubai Downtown property's value with our premium short-term rental management. We transform apartments into luxury holiday homes that earn 20-40% more than traditional rentals.">
+    <meta name="keywords" content="Dubai holiday home management, Downtown Dubai rentals, luxury short-term rentals, property value increase, premium rental management">
+    <style>
+
+.transformation-grid-2col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.photo-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.photo-pair img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--light-gray);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.photo-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(193, 154, 107, 0.9); /* var(--primary) with some opacity */
+    color: #121212; /* dark text */
+    padding: 5px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 5;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+
+        :root {
+            --primary: #c19a6b;
+            --dark: #121212;
+            --darker: #0a0a0a;
+            --light: #f8f8f8;
+            --gray: #333;
+            --light-gray: #444;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Balcony.png');
+
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: var(--light);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        h1, h2, h3, h4 {
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 60px 0 40px;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--dark);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #d4b48c;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            margin-left: 15px;
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: var(--dark);
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .benefits {
+            background-color: var(--darker);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .benefit-card {
+            background-color: var(--gray);
+            padding: 30px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .benefit-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .comparison {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .comparison-item {
+            flex: 1;
+            min-width: 300px;
+            background-color: var(--gray);
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .comparison-item h3 {
+            color: var(--primary);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .comparison-item .price {
+            font-size: 2rem;
+            color: var(--primary);
+            margin: 20px 0;
+        }
+        
+        .comparison-item ul {
+            list-style: none;
+            text-align: left;
+            margin: 30px 0;
+        }
+        
+        .comparison-item ul li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .comparison-item ul li:before {
+            content: "✓";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+        }
+        
+        .transformations {
+            background-color: var(--darker);
+        }
+        
+        .transformation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .transformation-item {
+            position: relative;
+        }
+        
+        .transformation-item h4 {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .image-comparison {
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        
+        .image-comparison img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+        
+        .before {
+            width: 50%;
+            z-index: 2;
+            border-right: 3px solid var(--primary);
+        }
+        
+        .after {
+            width: 100%;
+            z-index: 1;
+        }
+        
+        .contact {
+            text-align: center;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto 0;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--light-gray);
+            border: none;
+            border-radius: 4px;
+            color: var(--light);
+        }
+        
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-method i {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        footer {
+            background-color: var(--darker);
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .transformation-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-methods {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+    .photo-pair {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-pair img {
+        max-height: 200px;
+    }
+}
+
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Burooj<span style="color: var(--primary)"> Al Samiyah</span></div>
+        <nav>
+            <ul>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#options">Options</a></li>
+                <li><a href="#transformations">Transformations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Maximize Your Property's Potential</h1>
+            <p>Transform your apartment into a luxury holiday home that earns 20-40% more than traditional rentals while increasing your property value.</p>
+            <div>
+                <a href="#contact" class="btn">Get Started</a>
+                <a href="#options" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2>Why Choose Burooj Al Samiyah?</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Downtown Dubai properties command premium rates in the short-term rental market. We help landlords capitalize on this demand while protecting and enhancing their investments.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Higher Rental Income</h3>
+                    <p>Our luxury holiday homes generate 20-40% more revenue than traditional long-term rentals, with Downtown Dubai commanding some of the highest nightly rates in the city.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Increased Property Value</h3>
+                    <p>Professionally designed and furnished apartments sell faster and at higher prices. We enhance your property's appeal to future buyers.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Hassle-Free Management</h3>
+                    <p>We handle everything from interior design to guest communication, maintenance, and cleaning. You get paid without the headaches.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Higher Occupancy Rates</h3>
+                    <p>Our professional marketing and premium listings on top platforms ensure your property stays booked at optimal rates.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Premium Guest Experience</h3>
+                    <p>We attract higher-quality guests who treat your property with respect, reducing wear and tear compared to long-term tenants.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Flexible Options</h3>
+                    <p>Choose between guaranteed fixed income or higher revenue sharing - we have solutions for every landlord's needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="options" class="options">
+        <div class="container">
+            <h2>Our Partnership Models</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">We offer two ways to maximize your property's potential. Both options include full management, premium furnishings, and professional marketing.</p>
+            
+            <div class="comparison">
+                <div class="comparison-item">
+                    <h3>Lease to Us</h3>
+                    <div class="price">Guaranteed Fixed Rent</div>
+                    <p>Ideal for landlords who prefer stable, predictable income</p>
+                    <ul>
+                        <li>We lease your property for 1-3 years</li>
+                        <li>Guaranteed monthly payments</li>
+                        <li>We handle all furnishing costs</li>
+                        <li>No management hassles</li>
+                        <li>Property returned in excellent condition</li>
+                        <li>Perfect for overseas owners</li>
+                    </ul>
+                    <a href="#contact" class="btn">Inquire About Leasing</a>
+                </div>
+                
+                <div class="comparison-item" style="border: 2px solid var(--primary);">
+                    <h3>Revenue Share Partnership</h3>
+                    <div class="price">Higher Earnings Potential</div>
+                    <p>Ideal for landlords who want to maximize returns</p>
+                    <ul>
+                        <li>You invest in premium furnishings</li>
+                        <li>We manage everything professionally</li>
+                        <li>Earn 80% of rental revenue</li>
+                        <li>Higher income than traditional leases</li>
+                        <li>Full transparency with statements</li>
+                        <li>Keep your property market-ready</li>
+                    </ul>
+                    <a href="#contact" class="btn">Discuss Partnership</a>
+                </div>
+            </div>
+            
+            <div style="max-width: 800px; margin: 60px auto 0; background-color: var(--gray); padding: 30px; border-radius: 8px;">
+                <h3 style="text-align: center; color: var(--primary);">Why Holiday Rentals Outperform Long-Term Tenants</h3>
+                <ul style="margin-top: 20px;">
+                    <li><strong>Higher Income:</strong> Nightly rates add up to significantly more than monthly rents</li>
+                    <li><strong>Less Wear & Tear:</strong> Short stays mean less cumulative damage than year-long tenants</li>
+                    <li><strong>Flexibility:</strong> You can use your property when needed</li>
+                    <li><strong>Market Exposure:</strong> Professionally maintained properties sell faster at higher prices</li>
+                    <li><strong>Premium Positioning:</strong> Luxury holiday rentals attract quality guests who respect your property</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="transformations" class="transformations">
+        <div class="container">
+            <h2>Our Transformations</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">See how we've transformed Downtown apartments into luxury holiday homes that command premium rates.</p>
+            
+            <div class="transformation-grid-2col">
+                <div class="photo-pair">
+    <div class="photo-wrapper">
+        <span class="photo-label">Before</span>
+        <img src="images/before1.png" alt="Before transformation 1">
+    </div>
+    <div class="photo-wrapper">
+        <span class="photo-label">After</span>
+        <img src="images/after1.jpg" alt="After transformation 1">
+    </div>
+</div>
+
+
+<div class="photo-pair">
+    <div class="photo-wrapper">
+        <span class="photo-label">Before</span>
+        <img src="images/before2.png" alt="Before transformation 1">
+    </div>
+    <div class="photo-wrapper">
+        <span class="photo-label">After</span>
+        <img src="images/after2.jpg" alt="After transformation 1">
+    </div>
+</div>
+
+<div class="photo-pair">
+    <div class="photo-wrapper">
+        <span class="photo-label">Before</span>
+        <img src="images/before3.png" alt="Before transformation 1">
+    </div>
+    <div class="photo-wrapper">
+        <span class="photo-label">After</span>
+        <img src="images/after3.jpg" alt="After transformation 1">
+    </div>
+</div>
+
+<div class="photo-pair">
+    <div class="photo-wrapper">
+        <span class="photo-label">Before</span>
+        <img src="images/before4.png" alt="Before transformation 1">
+    </div>
+    <div class="photo-wrapper">
+        <span class="photo-label">After</span>
+        <img src="images/after4.jpg" alt="After transformation 1">
+    </div>
+</div>
+
+            </div>
+    
+            <div style="margin-top: 60px; background-color: var(--gray); padding: 30px; border-radius: 8px;">
+                <h3 style="text-align: center; color: var(--primary);">Our Design & Furnishing Process</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px;">
+                    <div>
+                        <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-ruler-combined"></i> Space Planning</h4>
+                        <p>Optimizing layouts for guest comfort and photography appeal</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-palette"></i> Luxury Finishes</h4>
+                        <p>Premium materials that withstand heavy use while looking elegant</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-couch"></i> Furniture Selection</h4>
+                        <p>Durable, stylish pieces chosen for the short-term rental market</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--primary); margin-bottom: 10px;"><i class="fas fa-camera"></i> Professional Photography</h4>
+                        <p>Showcase your property in its best light across all platforms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Ready to Maximize Your Property's Potential?</h2>
+            <p>Contact us today for a free consultation and rental estimate for your Downtown Dubai property.</p>
+            
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="property">Property Details</label>
+                        <select id="property">
+                            <option value="">Select property type</option>
+                            <option value="Studio">Studio Apartment</option>
+                            <option value="1-bed">1-Bedroom Apartment</option>
+                            <option value="2-bed">2-Bedroom Apartment</option>
+                            <option value="3-bed">3-Bedroom Apartment</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interest">I'm interested in</label>
+                        <select id="interest">
+                            <option value="">Select option</option>
+                            <option value="lease">Leasing to Burooj Al Samiyah</option>
+                            <option value="revenue">Revenue Share Partnership</option>
+                            <option value="both">Both Options</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%;">Request Consultation</button>
+                </form>
+            </div>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Call Us</h4>
+                        <p><a href="tel:+971585407429" style="color: var(--primary); text-decoration: none;">+971 58 540 7429</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/971585407429" style="color: var(--primary); text-decoration: none;">+971 58 540 7429</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:info@BuroojAlSamiyah.ae" style="color: var(--primary); text-decoration: none;">info@BuroojAlSamiyah.ae</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="margin-bottom: 20px;">
+                <span style="font-size: 24px; font-weight: bold;">Burooj<span style="color: var(--primary)"> Al Samiyah</span></span>
+            </div>
+            <p>Premium Holiday Home Management | Downtown Dubai</p>
+            <p style="margin-top: 20px;">© 2025 Burooj Al Samiyah. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
