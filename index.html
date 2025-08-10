@@ -383,6 +383,63 @@
 
 /* Responsive for small screens */
 @media (max-width: 768px) {
+
+/* MOBILE HEADER FIX */
+header {
+    height: auto; /* let content define height */
+    padding: 40px 20px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+/* Logo moves to top center */
+.logo {
+    position: static;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+/* Navigation becomes vertical under logo */
+nav {
+    position: static;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul li {
+    margin: 0; /* remove side margins */
+}
+
+/* Heading & text sizing */
+h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+/* Ensure buttons don't squish */
+.btn, .btn-outline {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+
     .photo-pair {
         grid-template-columns: 1fr;
     }
